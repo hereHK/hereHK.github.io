@@ -22,16 +22,18 @@ h1{
 
 p{
     width: 20%;
-    height: 20%;
+    height: 40%;
+    font-size: 20px;
 }
 
 /* CHAT GPT PRONT*/
 #ChatGptWebDevPront01{
     margin-top: 10px;
-    font-weight: bold;
     transform: translateX(10px);
     border: 1px solid rgba(255, 0, 0, 0.199);
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 
 /* W3School*/
@@ -40,6 +42,11 @@ p{
     width: 250px;
     transform: translateX(550px) translateY(-225px);
 }
+
+#W3SchoolsIMG:hover{
+    width: 255px;
+}
+
 
 /* Media Query para dispositivos con un ancho máximo de 1080px  NORMALMENTE NO ES NECESARIO */
 @media (max-width: 1440px) {
@@ -50,10 +57,12 @@ p{
 
 /* Media Query para dispositivos con un ancho máximo de 1080px  NORMALMENTE NO ES NECESARIO */
 @media (max-width: 1080px) {
-    
-    #W3SchoolsIMG{
-        transform: translateX(400px) translateY(-225px);
+    p{
+        width: 40%;
+        height: 40%;
+        font-size: 20px;
     }
+
     
 }
 
@@ -66,6 +75,9 @@ p{
 
 /* Media Query para dispositivos con un ancho máximo de 768px */
 @media (max-width: 768px) {
+    h1{
+        margin-top: 10px;
+    }
     p{   
         width: 80%;
         height: 80%;

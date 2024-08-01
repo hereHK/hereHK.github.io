@@ -33,6 +33,10 @@ p{
     transform: translateX(1200px) translateY(-100px) rotate(10deg);
 }
 
+#Presentacion01:hover{
+    transform: translateX(1200px) translateY(-100px) rotate(-10deg);
+}
+
 /*QueSueloHacer*/
 #QueSueloHacer01{
     width: 500px;

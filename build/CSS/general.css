@@ -1,3 +1,6 @@
+/*Fuentes y importaciones*/
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalnia+Glaze:wght@100..700&family=Noto+Color+Emoji&display=swap');
+
 /* Estilos base */
 * {
     margin: 0;
@@ -6,7 +9,7 @@
 
 body {
     background-color: rgb(34, 34, 34);
-    font-family: Arial, sans-serif; /* Para una mejor visualización del texto */
+    font-family: Josefin Sans, sans-serif; /* Para una mejor visualización del texto */
 }
 
 .toggle-button {
@@ -39,6 +42,7 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px;
+    font-family: B612;
 }
 
 .header-container nav a:hover {

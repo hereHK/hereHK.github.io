@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleButton.addEventListener('click', function() {
             if (isPanelVisible) {
                 panel.style.display = 'none';
-                toggleButton.textContent = '...';
+                toggleButton.textContent = 'Menu de navegación';
             } else {
                 panel.style.display = 'flex';
-                toggleButton.textContent = 'xxx';
+                toggleButton.textContent = 'Cerrar menu';
             }
             isPanelVisible = !isPanelVisible; // Alterna el estado
         });
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
     
-
 
     ResaltarNav()
 
@@ -67,14 +66,12 @@ function ResaltarNav(){
     }
 }
 
-
-
 function copyClick(elementId){
     const elemento = document.getElementById(elementId);
      const texto = elemento.textContent || elemento.innerText;
      navigator.clipboard.writeText(texto).then(function() {
         // Mostrar un mensaje de éxito
-        alert('Texto copiado al portapapeles: ' + texto);
+        alert('Texto copiado al portapapeles');
     }).catch(function(err) {
         // Manejar errores
         console.error('Error al copiar el texto: ', err);
