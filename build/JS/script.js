@@ -70,6 +70,12 @@ function ResaltarNav(){
 
 
 function copyClick(elementId){
-    
+    navigator.clipboard.writeText(elementId).then(function() {
+        // Mostrar un mensaje de éxito
+        alert('Texto copiado al portapapeles: ' + texto);
+    }).catch(function(err) {
+        // Manejar errores
+        console.error('Error al copiar el texto: ', err);
+    });
 }
 
