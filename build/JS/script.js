@@ -67,3 +67,9 @@ function ResaltarNav(){
     }
 }
 
+
+
+function copyClick(elementId){
+    
+}
+
