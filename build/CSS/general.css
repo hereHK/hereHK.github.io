@@ -1,0 +1,89 @@
+/* Estilos base */
+* {
+    margin: 0;
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto de los elementos */
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    font-family: Arial, sans-serif; /* Para una mejor visualización del texto */
+}
+
+.toggle-button {
+    display: none; /* Oculta el botón por defecto */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    flex-direction: row; /* Dirección horizontal por defecto */
+    padding: 10px;
+    background-color: #2b2b2b;
+    color: white;
+    font-weight: bold;
+}
+
+.header-container nav {
+    display: flex; /* Asegura que los enlaces se alineen en fila */
+    gap: 15px; /* Espacio entre los enlaces */
+}
+
+.header-container nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header-container nav a:hover {
+    text-decoration: underline;
+    box-shadow: 1px 1px 18px blanchedalmond;
+    border-radius: 5%;
+}
+
+
+
+/* Media Query para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .header-container {
+        width: 100%;
+        display: none;
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+        font-size: 18px;
+    }
+
+    .header-container nav {
+        flex-direction: column; /* Cambia la dirección de los enlaces a columna */
+        gap: 10px; /* Espacio entre los enlaces en modo columna */
+    }
+
+    .toggle-button{
+        display: block;
+    }
+}
+
+/* Media Query para dispositivos con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    .header-container {
+        width: 100%;
+        display: none;
+        font-size: 16px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+    }
+}
+
+
+
+
+
+
+
+/*Animations*/
+
+/*Selector animator*/

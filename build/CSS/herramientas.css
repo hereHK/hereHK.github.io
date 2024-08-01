@@ -1,0 +1,106 @@
+h1{
+    margin-bottom: 2%;
+}
+
+
+
+.HerramientasContainer{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+}
+
+p{
+    width: 20%;
+    height: 20%;
+}
+
+/* CHAT GPT PRONT*/
+#ChatGptWebDevPront01{
+    margin-top: 10px;
+    font-weight: bold;
+    transform: translateX(10px);
+    border: 1px solid rgba(255, 0, 0, 0.199);
+    cursor: pointer;
+}
+
+/* W3School*/
+
+#W3SchoolsIMG{
+    width: 250px;
+    transform: translateX(550px) translateY(-225px);
+}
+
+/* Media Query para dispositivos con un ancho máximo de 1080px  NORMALMENTE NO ES NECESARIO */
+@media (max-width: 1440px) {
+    
+
+    
+}
+
+/* Media Query para dispositivos con un ancho máximo de 1080px  NORMALMENTE NO ES NECESARIO */
+@media (max-width: 1080px) {
+    
+    #W3SchoolsIMG{
+        transform: translateX(400px) translateY(-225px);
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    #W3SchoolsIMG{
+        transform: translateX(400px) translateY(-225px);
+    }
+}
+   
+
+/* Media Query para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    p{   
+        width: 80%;
+        height: 80%;
+    }
+    /*W3School*/
+    #W3SchoolsIMG{
+        width: 250px;
+        transform: translateX(125px) translateY(50px);
+    }
+
+}
+
+/* Media Query para dispositivos con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    h1{
+        margin-left: 7px ;
+    }
+    p{   
+        margin-left: 10px;
+        width: 80%;
+        height: 80%;
+    }
+
+    /*W3School*/
+    #W3SchoolsIMG{
+        width: 150px;
+        transform: translateX(100px) translateY(20px);
+    }
+    
+}
+
+
+
+
+
+
+
+
