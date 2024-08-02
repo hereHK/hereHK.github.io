@@ -14,28 +14,54 @@ body {
 
 .toggle-button {
     display: none; /* Oculta el botón por defecto */
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+   background-image: url(/build/images/menuIcon.svg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 50px;
+   width: 50px;
+   border-radius: 100%;
+   border: none;
+   transform: translateX(10px);
+   margin-bottom: 10px;
+
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+    transition: transform 0.2s ease; /* Transición suave para la animación */
 }
+
+.toggle-button:active {
+    transform: scale(0.8); /* Reduce el tamaño al 80% cuando se hace clic */
+}
+
+
+
 
 .header-container {
     display: flex;
     justify-content: center; /* Centra los elementos dentro del contenedor */
     flex-direction: row; /* Dirección horizontal por defecto */
+    align-items: center;
+    width: 100%;
     padding: 10px;
-    background-color: #2b2b2b;
+    position: fixed;
+
     color: white;
     font-weight: bold;
+    z-index: 10;
+
 }
 
 .header-container nav {
-    display: flex; /* Asegura que los enlaces se alineen en fila */
-    gap: 15px; /* Espacio entre los enlaces */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+    background-color: #808080;
+    width: 60%;
+    height: 65%;
+    border-radius: 20px;
 }
 
 .header-container nav a {
@@ -48,9 +74,29 @@ body {
 .header-container nav a:hover {
     text-decoration: underline;
     box-shadow: 1px 1px 18px blanchedalmond;
-    border-radius: 5%;
+    border-radius: 25px;
 }
 
+
+#PrimerDiv{
+    margin-top: 5%;
+}
+
+@media (max-width: 1440px) {
+
+    .header-container nav {
+        width: 70%;
+    }
+
+    #PrimerDiv{
+        margin-top: 7%;
+    }
+}
+@media (max-width: 1080px) {
+
+}
+@media (max-width: 1024px) {
+}
 
 
 /* Media Query para dispositivos con un ancho máximo de 768px */
@@ -59,7 +105,7 @@ body {
         width: 100%;
         display: none;
         flex-direction: column; /* Cambia la dirección del flex a columna */
-        align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+        align-items: center; /* Alinea los elementos al inicio (izquierda) */
         font-size: 18px;
     }
 
@@ -70,6 +116,7 @@ body {
 
     .toggle-button{
         display: block;
+        
     }
 }
 
@@ -84,10 +131,71 @@ body {
 
 
 
-
-
-
-
 /*Animations*/
+@keyframes pop-up {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes Transicion {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+/*PARA LAS PAGINAS SIN CONTENIDO*/
+.SinContenido {
+    animation: pop-up 0.5s ease-out;
+}
+
+.SinContenido p {
+    transform: translateX(0px);
+}
+
+.SinContenido-Container {
+    position: relative;
+    background-color: white;
+    width: 30%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+
+    top: 50%;
+    left: 35%;
+}
+
+.transicion-svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Asegúrate de que el SVG esté sobre otros elementos si es necesario */
+    opacity: 1;
+    transition: opacity 0.5s ease-out; /* Ajusta el tiempo y el tipo de transición según tus necesidades */
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+
 
 /*Selector animator*/

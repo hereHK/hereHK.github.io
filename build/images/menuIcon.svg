@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50.0px"
+   height="50.0px"
+   viewBox="0 0 50.0 50.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="menuIcon.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview137"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="11.313709"
+     inkscape:cx="22.494834"
+     inkscape:cy="31.377863"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid260" />
+  </sodipodi:namedview>
+  <defs
+     id="defs132" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       cx="25.000189"
+       cy="24.99831"
+       fill="#ffffff"
+       id="circle317"
+       rx="24.99017"
+       ry="24.986763"
+       style="stroke-width:0.183739" />
+    <rect
+       x="11.035091"
+       y="14"
+       width="27.930185"
+       height="3.675"
+       rx="1.8375125"
+       fill="#000000"
+       id="rect319"
+       style="stroke-width:0.183739" />
+    <rect
+       x="11.035091"
+       y="23.370037"
+       width="27.93"
+       height="3.675"
+       rx="1.8375125"
+       fill="#000000"
+       id="rect321"
+       style="stroke-width:0.183739" />
+    <rect
+       x="11.035091"
+       y="32.740074"
+       width="27.93"
+       height="3.675"
+       rx="1.8375125"
+       fill="#000000"
+       id="rect323"
+       style="stroke-width:0.183739" />
+  </g>
+</svg>
