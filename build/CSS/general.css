@@ -23,6 +23,7 @@ body {
    border-radius: 100%;
    border: none;
    transform: translateX(10px);
+   margin-top: 10px;
    margin-bottom: 10px;
 
     cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
