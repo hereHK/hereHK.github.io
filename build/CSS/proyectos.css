@@ -1,0 +1,76 @@
+.ProjecContainer{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+}
+
+.ProjecContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+h1{
+    width: auto;
+    margin-bottom: 2%;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+p{
+    width: 20%;
+    height: 45%;
+    font-size: 20px;
+}
+a{
+    color: aliceblue;
+}
+
+/*PickPixelColor*/
+#PickPixelColor01{
+    margin-top: 50px;
+}
+
+
+@media (max-width: 1440px) {
+
+}
+
+/* Media Query para dispositivos con un ancho máximo de 1080px  NORMALMENTE NO ES NECESARIO */
+@media (max-width: 1080px) {
+  
+}
+
+@media (max-width: 1024px) {
+ 
+}
+
+
+/* Media Query para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    p{   
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+/* Media Query para dispositivos con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    h1{
+        margin-left: 7px ;
+    }
+    p{   
+        margin-left: 10px;
+        width: 80%;
+        height: 80%;
+    }
+ 
+}
+
+@media (max-width: 320px) {
+     
+}

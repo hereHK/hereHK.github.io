@@ -9,20 +9,31 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleButton.addEventListener('click', function() {
             const button = this;
             button.classList.add('active');
+        
             setTimeout(() => {
-            button.classList.remove('active');
+                button.classList.remove('active');
             }, 200); // El mismo tiempo que la duración de la transición en CSS
-
+        
             if (isPanelVisible) {
                 panel.style.display = 'none';
                 panel.style.zIndex = '0';
+                
             } else {
                 panel.style.display = 'flex';
                 panel.style.zIndex = '10';
+
+                // Añadir la clase de animación
+                panel.classList.add('anim-nav-menu');
+            
+                // Eliminar la clase de animación después de que haya terminado
+                panel.addEventListener('animationend', () => {
+                panel.classList.remove('anim-nav-menu');
+                });
+
             }
             isPanelVisible = !isPanelVisible; // Alterna el estado
         });
-
+        
     }else {
         panel.style.display = 'flex'
         toggleButton.style.display = 'none'
@@ -61,7 +72,7 @@ function ResaltarNav(){
             transicionPagina()
             proyectos.style.backgroundColor = '#666666';
             proyectos.style.borderRadius = '25px';
-            PaginaVacia();
+            
             break;  // Evita que el código continúe al siguiente caso
         case '/historiasyrese%C3%B1as.html':
             transicionPagina()
@@ -124,6 +135,8 @@ function PaginaVacia() {
 }
 
 function transicionPagina() {
+        const panel = document.getElementById('panel');
+
     const svgNamespace = "http://www.w3.org/2000/svg";
     const svg = document.createElementNS(svgNamespace, "svg");
 
@@ -156,11 +169,19 @@ function transicionPagina() {
     // Esperar un momento antes de iniciar la animación para asegurar que el SVG esté visible
     setTimeout(() => {
         svg.classList.add("fade-out");
-    }, 10); // Un pequeño retraso para asegurar que la transición se aplica
+        // Añadir la clase de animación
+        }, 10); // Un pequeño retraso para asegurar que la transición se aplica
+
 
     // Eliminar el SVG del documento después de que la animación termine
     svg.addEventListener('transitionend', () => {
         document.body.removeChild(svg);
+        
     });
+
+    panel.addEventListener('animationend', () => {
+        panel.classList.remove('anim-nav-menu');
+    });
+
 }
     

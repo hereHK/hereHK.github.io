@@ -79,6 +79,8 @@ body {
 }
 
 
+
+
 #PrimerDiv{
     margin-top: 5%;
 }
@@ -128,6 +130,7 @@ body {
         display: none;
         font-size: 16px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
     }
+    
 }
 
 
@@ -154,6 +157,16 @@ body {
     }
     100% {
         opacity: 0%;
+    }
+}
+
+@keyframes NavMenuAnimation {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
 
@@ -198,5 +211,7 @@ body {
 }
 
 
-
+.anim-nav-menu {
+    animation: NavMenuAnimation 0.3s linear;
+}
 /*Selector animator*/
