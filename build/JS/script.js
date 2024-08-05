@@ -182,6 +182,6 @@ function transicionPagina() {
     panel.addEventListener('animationend', () => {
         panel.classList.remove('anim-nav-menu');
     });
-
+    
 }
     
